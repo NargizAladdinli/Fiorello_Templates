@@ -49,6 +49,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  #end .container .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #end .container .contact .qode {
   color: #afafaf;
   font-size: 12px;
