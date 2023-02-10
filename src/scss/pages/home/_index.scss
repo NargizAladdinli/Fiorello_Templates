@@ -1,0 +1,53 @@
+#blog{
+    background: $sub_color;
+    padding: 20px 0px;
+    .container{
+        .txt{
+            padding: 50px 0px;
+            margin-left: 25%;
+            width: 50%;
+            text-align: center;
+            h2{
+                @include Text($f_style:normal,$f_weight:$weight_400,$f_size:38px,$l_heit:55px,$colrs:$h2_color);
+                font-family: 'Playfair Display', serif;
+            }
+            p{
+                @include Text($colrs:$dark_gray,$f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:29px);
+                font-family: 'Lora', serif;
+            }
+        }
+        .all{
+            @include Img($pos:relative,$wid:$width_100,$flow:hidden);
+            .img{
+                @include Img($wid:$width_100,$flow:hidden,$pos:relative);
+                img{
+                    @include Img($wid:100%,$heit:100%,$o_fit:cover,$o_pos:center);
+                    transform: scale(1);
+                    transition: .3s ease-in-out;
+                    &:hover{ transform: scale(1.1); }
+                }
+                .pos{
+                    @include Img($pos:absolute,$heit:25px,$right:312px,$top:10px,$left:10px);
+                    @include Text($t_align:center,$ground:$bc_color);
+                    a{
+                        @include Text($t_decoration:none,$colrs:$black_color,$f_size:10px,$f_style:normal,$f_weight:$weight_500,$l_heit:10px);
+                        transition: .2s ease-in-out;
+                        &:hover{ color: $red_color; }
+                    }
+                }
+            }
+            .text{
+                text-align: center;
+                padding: 30px 0px;
+                a{
+                    @include Text($f_style:normal,$f_size:22px,$f_weight:$weight_400,$l_heit:30px,$t_decoration:none,$colrs:$h2_color);
+                    font-family: 'Playfair Display', serif;
+                }
+                p{
+                    @include Text($colrs:$dark_gray,$f_style:normal,$f_weight:$weight_400,$f_size:15px,$l_heit:24px);
+                    font-family: 'Lora', serif;
+                }
+            }
+        }
+    }
+}
