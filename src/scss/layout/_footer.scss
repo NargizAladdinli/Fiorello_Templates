@@ -1,0 +1,50 @@
+#end{
+    background: $bc_color;
+    .container{
+        h6{
+            @include Text($colrs:$black_color,$f_size:$tag_size,$l_heit:2em,$f_weight:$weight_500,$l_spacing:.1em);
+            padding: 20px 0px;
+        }
+        ul{
+            padding-left: 0;
+            li{
+                padding: 0 0 3px;
+                a{
+                    @include Text($colrs:$link_color,$f_size:$tag_size,$t_decoration:none,$f_weight:400,$l_heit:$line_h,$f_style:normal);
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: $red_color;
+                    }
+                }
+            }
+        }
+        hr{
+            color: $line_color;
+            opacity: 1;
+        }
+        .contact{
+            padding: 20px 0px;
+            @include Flex($j_content:space-between,$a_items:center);
+            .qode{
+                @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h);
+                a{
+                    @include Text($colrs:$dark_gray,$t_decoration:none);
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: $red_color;
+                    }
+                }
+            }
+            .sosial{
+                a{
+                    @include Text($colrs:$gray_color,$f_size:10px,$l_heit:$line_h,$t_decoration:none,$f_weight:$weight_300);
+                    padding: 0px 10px;
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        color: $red_color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#end {
+  background: #fefaf3;
+}
+#end .container h6 {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  padding: 20px 0px;
+}
+#end .container ul {
+  padding-left: 0;
+}
+#end .container ul li {
+  padding: 0 0 3px;
+}
+#end .container ul li a {
+  text-decoration: none;
+  color: #8B8B8B;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  transition: 0.2s ease-in-out;
+}
+#end .container ul li a:hover {
+  color: #f34f3f;
+}
+#end .container hr {
+  color: #eceae1;
+  opacity: 1;
+}
+#end .container .contact {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#end .container .contact .qode {
+  color: #afafaf;
+  font-size: 12px;
+  line-height: 24px;
+}
+#end .container .contact .qode a {
+  text-decoration: none;
+  color: #6d6a6a;
+  transition: 0.2s ease-in-out;
+}
+#end .container .contact .qode a:hover {
+  color: #f34f3f;
+}
+#end .container .contact .sosial a {
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 0px 10px;
+  transition: 0.2s ease-in-out;
+}
+#end .container .contact .sosial a:hover {
+  color: #f34f3f;
+}/*# sourceMappingURL=style.css.map */
