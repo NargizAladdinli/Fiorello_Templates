@@ -12,9 +12,7 @@
                 a{
                     @include Text($colrs:$link_color,$f_size:$tag_size,$t_decoration:none,$f_weight:400,$l_heit:$line_h,$f_style:normal);
                     transition: .2s ease-in-out;
-                    &:hover{
-                        color: $red_color;
-                    }
+                    &:hover{ color: $red_color; }
                 }
             }
         }
@@ -30,9 +28,7 @@
                 a{
                     @include Text($colrs:$dark_gray,$t_decoration:none);
                     transition: .2s ease-in-out;
-                    &:hover{
-                        color: $red_color;
-                    }
+                    &:hover{ color: $red_color; }
                 }
             }
             .sosial{
@@ -40,9 +36,7 @@
                     @include Text($colrs:$gray_color,$f_size:10px,$l_heit:$line_h,$t_decoration:none,$f_weight:$weight_300);
                     padding: 0px 10px;
                     transition: .2s ease-in-out;
-                    &:hover{
-                        color: $red_color;
-                    }
+                    &:hover{ color: $red_color; }
                 }
             }
         }
