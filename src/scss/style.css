@@ -113,7 +113,7 @@ body {
 }
 
 #swiper .container {
-  max-width: 1140px;
+  max-width: 960px;
   height: 506px;
 }
 #swiper .container .swiper {
@@ -157,6 +157,28 @@ body {
   font-weight: 500;
   line-height: 24px;
   font-style: normal;
+}
+#swiper .container .swiper .swiper-button-next i {
+  color: #b5b0b0;
+  font-size: 40px;
+  transition: 0.3s ease-in-out;
+}
+#swiper .container .swiper .swiper-button-next i:hover {
+  color: #1b1b1b;
+}
+#swiper .container .swiper .swiper-button-next::after {
+  content: "";
+}
+#swiper .container .swiper .swiper-button-prev i {
+  color: #b5b0b0;
+  font-size: 40px;
+  transition: 0.3s ease-in-out;
+}
+#swiper .container .swiper .swiper-button-prev i:hover {
+  color: #1b1b1b;
+}
+#swiper .container .swiper .swiper-button-prev::after {
+  content: "";
 }
 
 #end {

@@ -53,7 +53,7 @@
 }
 #swiper{
     .container{
-        max-width: 1140px;
+        max-width: 960px;
         height: 506px;
         .swiper {
             @include Img($wid:100%,$heit:100%);
@@ -75,6 +75,22 @@
                 .two{
                     @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h,$f_weight:$weight_500,$f_style:normal);
                 }
+            }
+            .swiper-button-next{
+                i{
+                    @include Text($f_size:40px,$colrs:$i_color);
+                    transition: .3s ease-in-out;
+                    &:hover{ color: $b1_color; }
+                }
+                &::after{ content: ''; }
+            }
+            .swiper-button-prev{
+                i{
+                    @include Text($f_size:40px,$colrs:$i_color);
+                    transition: .3s ease-in-out;
+                    &:hover{ color: $b1_color; }
+                }
+                &::after{ content: ''; }
             }
           }
     }
