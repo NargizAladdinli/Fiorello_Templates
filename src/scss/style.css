@@ -20,6 +20,66 @@ body {
   height: 100%;
 }
 
+#fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 533px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#fixed .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#fixed .container h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  padding: 30px 0px;
+}
+#fixed .container form {
+  display: flex;
+}
+@media (max-width: 768px) {
+  #fixed .container form {
+    width: 100%;
+    margin: 50%;
+  }
+}
+#fixed .container form .white {
+  padding: 22px 19px 23px;
+  width: 467px;
+  height: 60px;
+  color: #959595;
+  font-size: 12px;
+  font-weight: 400;
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+  line-height: 15px;
+  font-style: normal;
+}
+#fixed .container form .red {
+  padding: 0.5px 43.1656px 0px 43.3656px;
+  width: 169px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f34f3f;
+  border: 1px;
+  line-height: 60px;
+  font-style: normal;
+}
+
 #blog {
   background: #f8f8f8;
   padding: 20px 0px;

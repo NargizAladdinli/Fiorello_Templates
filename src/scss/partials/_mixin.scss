@@ -32,9 +32,10 @@
     border-radius: $radius;
     font-style: $f_style;
 }
-@mixin Ground($ground_size:null,$ground_pos:null,$ground_color:null,$ground_repet:null){
+@mixin Ground($ground_size:null,$ground_pos:null,$ground_color:null,$ground_repet:null,$ground_attachment:null){
     background-size: $ground_size;
     background-position: $ground_pos;
     background-color: $ground_color;
     background-repeat: $ground_repet;
+    background-attachment: $ground_attachment;
 }
