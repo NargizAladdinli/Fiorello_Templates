@@ -51,3 +51,31 @@
         }
     }
 }
+#swiper{
+    .container{
+        max-width: 1140px;
+        height: 506px;
+        .swiper {
+            @include Img($wid:100%,$heit:100%);
+            .swiper-slide {
+                @include Flex($j_content:center,$a_items:center,$f_direction:column);
+                img{
+                    @include Img($wid:87px,$heit:87px,$o_fit:cover);
+                    display: block;
+                }
+                p{
+                    padding: 30px 0px;
+                    width: 613px;
+                    @include Text($f_size:24px,$f_weight:$weight_400,$l_heit:36px,$f_style:italic,$t_align:center,$colrs:$swiper);
+                    font-family: 'Lora', serif;
+                }
+                .one{
+                    @include Text($f_size:12px,$f_weight:$weight_500,$l_heit:24px,$f_style:normal,$colrs:$b1_color);
+                }
+                .two{
+                    @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h,$f_weight:$weight_500,$f_style:normal);
+                }
+            }
+          }
+    }
+}
