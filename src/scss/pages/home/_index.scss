@@ -7,8 +7,27 @@
             @include Img($wid:$width_100,$heit:100%,$o_fit:cover,$o_pos:center);
             transform: scale(1);
             transition: .3s ease-in-out;
-            &:hover{
-                transform: scale(1.04);
+            &:hover{ transform: scale(1.04); }
+        }
+    }
+    .text{
+        padding: 0px 90px;
+        h2{
+            @include Text($f_style:normal,$f_weight:$weight_400,$f_size:38px,$l_heit:55px);
+            font-family: 'Playfair Display', serif;
+            span{ color: $red_color; }
+        }
+        .one{
+            @include Text($f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:29px,$colrs:$dark_gray);
+            font-family: 'Lora', serif;
+            padding: 20px 0px;
+        }
+        .heart{
+            @include Flex($a_items:center,$gap:10px);
+            padding: 10px 0px;
+            .two{
+                @include Text($f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:29px,$colrs:$dark_gray);
+                margin: 0;
             }
         }
     }
@@ -42,14 +61,14 @@
 }
 #fixed{
     @include Flex($j_content:center,$a_items:center);
-    @include Img($wid:$width_100,$heit:533px);
+    @include Img($wid:$width_100,$heit:600px);
     @include Ground($ground_pos:center,$ground_size:cover,$ground_attachment:fixed,$ground_repet:no-repeat);
     .container{
         @include Flex($j_content:center,$a_items:center,$f_direction:column);
         h3{
             @include Text($f_size:30px,$l_heit:42px,$f_weight:$weight_400,$f_style:normal,$colrs:$white_color);
             font-family: 'Playfair Display', serif;
-            padding: 30px 0px;
+            // padding: 30px 0px;
         }
         form{
             display: flex;
