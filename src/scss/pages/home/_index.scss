@@ -1,6 +1,5 @@
 #human{
     .container{
-        max-width: 1140px;
         .text{
             padding: 50px 0px;
             margin-left: 25%;
@@ -15,11 +14,14 @@
                 font-family: 'Lora', serif;
             }
         }
-        img{
-            @include Img($o_fit:cover,$o_pos:center);
+        .img{
+            img{
+                @include Img($wid:100%,$o_fit:cover,$o_pos:center);
+            }
         }
         .txt{
             text-align: center;
+            padding: 30px 0px;
             h6{
                 @include Text($f_style:normal,$f_weight:$weight_500,$f_size:$tag_size,$l_heit:24px,$colrs:$b1_color);
             }

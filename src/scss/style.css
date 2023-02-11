@@ -21,9 +21,6 @@ body {
   height: 100%;
 }
 
-#human .container {
-  max-width: 1140px;
-}
 #human .container .text {
   padding: 50px 0px;
   margin-left: 25%;
@@ -46,7 +43,8 @@ body {
   font-style: normal;
   font-family: "Lora", serif;
 }
-#human .container img {
+#human .container .img img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -54,6 +52,7 @@ body {
 }
 #human .container .txt {
   text-align: center;
+  padding: 30px 0px;
 }
 #human .container .txt h6 {
   color: #1b1b1b;
