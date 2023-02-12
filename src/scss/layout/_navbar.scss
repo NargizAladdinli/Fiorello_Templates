@@ -1,0 +1,61 @@
+#menu{
+    padding: 20px 0px;
+    .all{
+        @include Flex($j_content:space-around,$a_items:center);
+        img{
+            @include Img($wid:210px,$o_fit:cover,$o_pos:center)
+        }
+        .list{
+            ul{
+                @include Flex($a_items:center,$gap:50px);
+                margin: 0;
+                @media (max-width:768px) {
+                    display: none;
+                }
+                li{
+                    .fix{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            @include Img($wid:$width_100,$pos:absolute,$botom:-3px,$left:0,$heit:1px,);
+                            background-color: currentColor;
+                            margin: auto;
+                        }
+                    }
+                    a{
+                        @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
+                        
+                    }
+                }
+            }
+        }
+        .mobile-menu{
+            display: none;
+            @media (max-width:768px) {
+                display: block;
+                .nav-link{
+                    @include Flex($a_items:center,$gap:20px,$f_direction:column);
+                    @include Img($pos:absolute,$top:68px,$right:0px,$wid:100%);
+                    transform: translateX(100%);
+                    li{
+                        a{
+                            @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
+                        }
+                    }
+                }
+                .burger{
+                    cursor: pointer;
+                    .bar{
+                        width: 25px;
+                        height: 3px;
+                        background-color: $red_color;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-active{
+    transform: translateX(0%) !important;
+}
