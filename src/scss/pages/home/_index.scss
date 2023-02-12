@@ -1,3 +1,61 @@
+#anime{
+    .swiper {
+        @include Img($wid:100%,$heit:100%,$pos:relative);
+        .text{
+            padding: 0px 186px;
+            @include Img($pos:absolute,$top:15%,$left:50px,$z_index:999);
+            h2{
+                @include Text($f_style:normal,$f_weight:$weight_400,$f_size:41px,$l_heit:55px);
+                font-family: 'Playfair Display', serif;
+                span{ color: $red_color; }
+            }
+            .one{
+                @include Text($f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:29px,$colrs:$dark_gray);
+                font-family: 'Lora', serif;
+                padding: 20px 0px;
+            }
+            .sara{
+                @include Img($wid:$width_100,$heit:100%);
+            }
+        }
+        .swiper-slide {
+            @include Flex($j_content:center,$a_items:center,$f_direction:column);
+            img{
+                @include Img($wid:$width_100,$o_fit:cover);
+            }
+            p{
+                padding: 30px 0px;
+                width: 613px;
+                @include Text($f_size:24px,$f_weight:$weight_400,$l_heit:36px,$f_style:italic,$t_align:center,$colrs:$swiper);
+                font-family: 'Lora', serif;
+            }
+            .one{
+                @include Text($f_size:12px,$f_weight:$weight_500,$l_heit:24px,$f_style:normal,$colrs:$b1_color);
+            }
+            .two{
+                @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h,$f_weight:$weight_500,$f_style:normal);
+            }
+        }
+        .swiper-button-next{
+            @media (max-width:768px) { display: none; }
+            i{
+                @include Text($f_size:40px,$colrs:$i_color);
+                transition: .3s ease-in-out;
+                &:hover{ color: $b1_color; }
+            }
+            &::after{ content: ''; }
+        }
+        .swiper-button-prev{
+            @media (max-width:768px) { display: none; }
+            i{
+                @include Text($f_size:40px,$colrs:$i_color);
+                transition: .3s ease-in-out;
+                &:hover{ color: $b1_color; }
+            }
+            &::after{ content: ''; }
+        }
+      }
+}
 #flower{
     padding: 50px 0px;
     .container{
