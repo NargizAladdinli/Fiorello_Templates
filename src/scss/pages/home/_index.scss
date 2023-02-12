@@ -2,6 +2,10 @@
     .swiper {
         @include Img($wid:100%,$heit:100%,$pos:relative);
         .text{
+            @media (max-width:1024px) { 
+                @include Img($pos:absolute,$top:5%,$left:0);
+                padding: 0px 50px;
+             }
             padding: 0px 186px;
             @include Img($pos:absolute,$top:15%,$left:50px,$z_index:999);
             h2{
@@ -14,14 +18,26 @@
                 font-family: 'Lora', serif;
                 padding: 20px 0px;
             }
-            .sara{
-                @include Img($wid:$width_100,$heit:100%);
-            }
+            .sara{ @include Img($wid:197px,$heit:56px); }
         }
         .swiper-slide {
             @include Flex($j_content:center,$a_items:center,$f_direction:column);
             img{
-                @include Img($wid:$width_100,$o_fit:cover);
+                @include Img($wid:$width_100,$o_fit:cover,$heit:477px);
+                transform: scale(1);
+                animation: scale 9s linear infinite;
+                @keyframes scale {
+                    0%{ transform: scale(1.01); }
+                    10%{ transform: scale(1.02); }
+                    20%{ transform: scale(1.03); }
+                    30%{ transform: scale(1.04); }
+                    40%{ transform: scale(1.05); }
+                    50%{ transform: scale(1.06); }
+                    60%{ transform: scale(1.07); }
+                    70%{ transform: scale(1.08); }
+                    80%{ transform: scale(1.09); }
+                    90%{ transform: scale(1.1); }
+                }
             }
             p{
                 padding: 30px 0px;
@@ -29,12 +45,8 @@
                 @include Text($f_size:24px,$f_weight:$weight_400,$l_heit:36px,$f_style:italic,$t_align:center,$colrs:$swiper);
                 font-family: 'Lora', serif;
             }
-            .one{
-                @include Text($f_size:12px,$f_weight:$weight_500,$l_heit:24px,$f_style:normal,$colrs:$b1_color);
-            }
-            .two{
-                @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h,$f_weight:$weight_500,$f_style:normal);
-            }
+            .one{ @include Text($f_size:12px,$f_weight:$weight_500,$l_heit:24px,$f_style:normal,$colrs:$b1_color); }
+            
         }
         .swiper-button-next{
             @media (max-width:768px) { display: none; }

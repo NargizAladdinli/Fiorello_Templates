@@ -2,16 +2,12 @@
     padding: 50px 0px;
     .all{
         @include Flex($j_content:space-around,$a_items:center);
-        img{
-            @include Img($wid:210px,$o_fit:cover,$o_pos:center)
-        }
+        img{ @include Img($wid:210px,$o_fit:cover,$o_pos:center) }
         .list{
             ul{
                 @include Flex($a_items:center,$gap:50px);
                 margin: 0;
-                @media (max-width:768px) {
-                    display: none;
-                }
+                @media (max-width:768px) { display: none; }
                 li{
                     .fix{
                         position: relative;
@@ -22,29 +18,24 @@
                             margin: auto;
                         }
                     }
-                    a{
-                        @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
-                        
-                    }
+                    a{ @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none); }
                 }
             }
         }
         .mobile-menu{
             display: none;
             @media (max-width:768px) {
-                // position: relative;
-                // overflow: hidden;
+                position: relative;
+                overflow: hidden;
                 display: block;
                 .nav-link{
                     @include Flex($a_items:center,$gap:20px,$f_direction:column);
-                    @include Img($pos:absolute,$top:68px,$right:0px,$wid:100%,$heit:50vh,$z_index:999);
+                    @include Img($pos:absolute,$top:90px,$right:0px,$wid:100%,$heit:50vh,$z_index:999);
                     background-color: $white_color;
                     transform: translateX(100%);
                     transition: .6s ease-in-out;
                     li{
-                        a{
-                            @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
-                        }
+                        a{ @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none); }
                     }
                 }
                 .burger{
