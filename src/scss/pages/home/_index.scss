@@ -1,3 +1,49 @@
+#flower{
+    padding: 50px 0px;
+    .container{
+        .list{
+            ul{
+                @media (max-width:768px) {
+                    display: none;
+                }
+                @include Flex($a_items:center,$gap:40px);
+                li{
+                    .fix{ color: $red_color; }
+                    a{
+                        @include Text($t_decoration:none,$f_size:$tag_size,$l_heit:24px,$f_weight:$weight_500,$f_style:normal,$colrs:$b1_color);
+                        transition: .3s ease-in-out;
+                        &:hover{ color: $red_color; }
+                    }
+                }
+            }
+        }
+        .img{
+            @include Img($wid:$width_100);
+            img{
+                @include Img($wid:$width_100,$heit:100%,$o_fit:cover,$o_pos:center);
+                transform: scale(1);
+                transition: .3s ease-in-out;
+                padding: 20px 0px;
+                &:hover{
+                    transform: scale(1.04);
+                }
+            }
+        }
+        .text{
+            text-align: center;
+            h6{
+                @include Text($f_weight:$weight_500,$f_size:12px,$l_heit:12px,$f_style:normal);
+            }
+            a{
+                @include Text($t_decoration:none,$f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+               display: none;
+            }
+            p{
+                @include Text($f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+            }
+        }
+    }
+}
 #video{
     background-color: $sub_color;
     padding: 50px 0px;
@@ -72,10 +118,7 @@
         }
         form{
             display: flex;
-            @media (max-width:768px) {
-                width: 100%;
-                margin: 50%;
-            }
+            @media (max-width:768px) { width: 100%; }
             .white{
                 padding: 22px 19px 23px;
                 @include Img($wid:467px,$heit:60px);
@@ -115,7 +158,7 @@
                     @include Img($wid:100%,$heit:100%,$o_fit:cover,$o_pos:center);
                     transform: scale(1);
                     transition: .3s ease-in-out;
-                    &:hover{ transform: scale(1.1); }
+                    &:hover{ transform: scale(1.04); }
                 }
                 .pos{
                     @include Img($pos:absolute,$heit:25px,$right:312px,$top:10px,$left:10px);
