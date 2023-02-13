@@ -1,5 +1,5 @@
 #menu{
-    padding: 50px 0px;
+    padding: 30px 0px;
     .all{
         @include Flex($j_content:space-around,$a_items:center);
         img{ @include Img($wid:210px,$o_fit:cover,$o_pos:center) }
@@ -52,3 +52,30 @@
 .nav-active{
     transform: translateX(0) !important;
 }
+// Dropdown menu
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+    .dropbtn {
+        color: white;
+        border: none;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $white_color;
+        min-width: 200px;
+        top: 25px;
+        left: -35px;
+        padding: 20px 0px;
+        z-index: 1;
+        transition: .9s ease-in-out;
+        a {
+         padding: 12px 35px;
+         display: block;
+       }
+      }
+      
+  }
+  .dropdown:hover .dropdown-content {display: block;}

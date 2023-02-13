@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital@0;1&display=swap");
 #menu {
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 #menu .all {
   display: flex;
@@ -93,6 +93,35 @@
 
 .nav-active {
   transform: translateX(0) !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 999;
+}
+.dropdown .dropbtn {
+  color: white;
+  border: none;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  top: 25px;
+  left: -35px;
+  padding: 20px 0px;
+  z-index: 1;
+  transition: 0.9s ease-in-out;
+}
+.dropdown .dropdown-content a {
+  padding: 12px 35px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 * {
@@ -651,6 +680,68 @@ body {
 }
 #swiper .container .swiper .swiper-button-prev::after {
   content: "";
+}
+
+#video1 {
+  padding: 50px 0px;
+}
+#video1 .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#video1 .row .img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#video1 .row .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#video1 .row .img img:hover {
+  transform: scale(1.04);
+}
+#video1 .row .text {
+  padding: 0px 90px;
+}
+#video1 .row .text h2 {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+#video1 .row .text h2 span {
+  color: #f34f3f;
+}
+#video1 .row .text .one {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  font-family: "Lora", serif;
+  padding: 20px 0px;
+}
+#video1 .row .text .heart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+#video1 .row .text .heart .two {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  margin: 0;
 }
 
 #end {
