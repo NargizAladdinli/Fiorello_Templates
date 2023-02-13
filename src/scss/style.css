@@ -54,8 +54,6 @@
 }
 @media (max-width: 768px) {
   #menu .all .mobile-menu {
-    position: relative;
-    overflow: hidden;
     display: block;
   }
   #menu .all .mobile-menu .nav-link {
@@ -71,7 +69,7 @@
     right: 0px;
     background-color: #ffffff;
     transform: translateX(100%);
-    transition: 0.6s ease-in-out;
+    transition: 0.9s ease-in-out;
   }
   #menu .all .mobile-menu .nav-link li a {
     text-decoration: none;
@@ -110,6 +108,11 @@ body {
   margin: 0;
   padding: 0;
   transition: all 0.9s ease-in-out;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 html,
@@ -179,32 +182,17 @@ body {
   0% {
     transform: scale(1.01);
   }
-  10% {
-    transform: scale(1.02);
-  }
   20% {
     transform: scale(1.03);
-  }
-  30% {
-    transform: scale(1.04);
   }
   40% {
     transform: scale(1.05);
   }
-  50% {
-    transform: scale(1.06);
-  }
   60% {
     transform: scale(1.07);
   }
-  70% {
-    transform: scale(1.08);
-  }
   80% {
     transform: scale(1.09);
-  }
-  90% {
-    transform: scale(1.1);
   }
 }
 #anime .swiper .swiper-slide p {

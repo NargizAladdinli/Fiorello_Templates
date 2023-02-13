@@ -25,15 +25,13 @@
         .mobile-menu{
             display: none;
             @media (max-width:768px) {
-                position: relative;
-                overflow: hidden;
                 display: block;
                 .nav-link{
                     @include Flex($a_items:center,$gap:20px,$f_direction:column);
                     @include Img($pos:absolute,$top:90px,$right:0px,$wid:100%,$heit:50vh,$z_index:999);
                     background-color: $white_color;
                     transform: translateX(100%);
-                    transition: .6s ease-in-out;
+                    transition: .9s ease-in-out;
                     li{
                         a{ @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none); }
                     }
