@@ -1,0 +1,59 @@
+#message{
+    padding: 50px 0px;
+    .container{
+        .flow{
+            @include Text($t_align:center,$ground:$sub_color);
+            padding: 70px 0px;
+            .qirl{
+                @include Img($wid:154px,$heit:154px,$o_fit:cover,$o_pos:center);
+            }
+            .txt{
+                padding: 20px 70px;
+                h2{
+                    @include Text($f_size:38px,$f_weight:$weight_400,$f_style:normal,$colrs:$h2_color,$l_heit:55px);
+                    font-family: 'Playfair Display', serif;
+                    span{ color: $red_color; }
+                }
+                p{
+                    padding: 10px 0px;
+                    @include Text($f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:27px,$colrs:$dark_gray);
+                    font-family: 'Lora', serif;
+                }
+            }
+            .sara{  @include Img($wid:197px,$heit:56px,$o_fit:cover,$o_pos:center); }
+        }
+        .touch{
+            padding: 0px 50px;
+            .txt{
+                h2{
+                    @include Text($f_size:38px,$f_weight:$weight_400,$f_style:normal,$colrs:$h2_color,$l_heit:55px);
+                    font-family: 'Playfair Display', serif;
+                }
+                p{
+                    padding: 10px 0px;
+                    @include Text($f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:27px,$colrs:$dark_gray);
+                    font-family: 'Lora', serif;
+                }
+            }
+            form{
+                input{
+                    @include Text($colrs:$color95,$f_size:12px,$ground:$white_color,$l_heit:20px,$f_weight:inherit,$border:1px solid $color_e8);
+                    width: 100%;
+                    margin: 0 0 15px;
+                    padding: 19px 18px;
+                }
+                textarea{
+                    @include Text($colrs:$color95,$f_size:12px,$ground:$white_color,$l_heit:20px,$f_weight:inherit,$border:1px solid $color_e8);
+                    width: 100%;
+                    margin: 0 0 15px;
+                    padding: 19px 18px;
+                }
+                .sory{
+                    width: 199.16px;
+                    @include Text($colrs:$white_color,$f_size:12px,$ground:$red_color,$l_heit:20px,$f_weight:$weight_500,$l_spacing:1.2px);
+                    height: 60.5px;
+                }
+            }
+        }
+    }
+}

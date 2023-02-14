@@ -57,6 +57,9 @@
     position: relative;
     display: inline-block;
     z-index: 999;
+    &:hover{
+        .dropdown-content{ display: block; }
+    }
     .dropbtn {
         color: white;
         border: none;
@@ -78,4 +81,3 @@
       }
       
   }
-  .dropdown:hover .dropdown-content {display: block;}

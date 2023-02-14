@@ -100,6 +100,9 @@
   display: inline-block;
   z-index: 999;
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .dropdown .dropbtn {
   color: white;
   border: none;
@@ -117,10 +120,6 @@
 }
 .dropdown .dropdown-content a {
   padding: 12px 35px;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -770,6 +769,106 @@ body {
   line-height: 29px;
   font-style: normal;
   margin: 0;
+}
+
+#message {
+  padding: 50px 0px;
+}
+#message .container .flow {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 70px 0px;
+}
+#message .container .flow .qirl {
+  width: 154px;
+  height: 154px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#message .container .flow .txt {
+  padding: 20px 70px;
+}
+#message .container .flow .txt h2 {
+  color: #2b2b2b;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+#message .container .flow .txt h2 span {
+  color: #f34f3f;
+}
+#message .container .flow .txt p {
+  padding: 10px 0px;
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  font-style: normal;
+  font-family: "Lora", serif;
+}
+#message .container .flow .sara {
+  width: 197px;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#message .container .touch {
+  padding: 0px 50px;
+}
+#message .container .touch .txt h2 {
+  color: #2b2b2b;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+#message .container .touch .txt p {
+  padding: 10px 0px;
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  font-style: normal;
+  font-family: "Lora", serif;
+}
+#message .container .touch form input {
+  color: #959595;
+  font-size: 12px;
+  font-weight: inherit;
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+  line-height: 20px;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 19px 18px;
+}
+#message .container .touch form textarea {
+  color: #959595;
+  font-size: 12px;
+  font-weight: inherit;
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+  line-height: 20px;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 19px 18px;
+}
+#message .container .touch form .sory {
+  width: 199.16px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f34f3f;
+  letter-spacing: 1.2px;
+  line-height: 20px;
+  height: 60.5px;
 }
 
 #end {
