@@ -1,6 +1,16 @@
 #aboutus{
+    @include Flex($j_content:center,$a_items:center,$f_direction:column);
     @include Img($wid:$width_100,$heit:320px);
-    @include Ground($ground_pos:center,$ground_size:cover,$ground_attachment:fixed,$ground_repet:no-repeat);
+    @include Ground($ground_pos:center,$ground_size:cover,$ground_attachment:fixed);
+    h1{
+        @include Text($f_size:50px,$l_heit:1.32rem,$colrs:$e0_color,$f_weight:$weight_400);
+        font-family: 'Playfair Display', serif;
+    }
+    span{
+        padding: 20px 0px;
+        @include Text($f_style:italic,$f_weight:$weight_400,$f_size:17px,$l_heit:24px,$colrs:$dark_gray);
+        font-family: 'Lora', serif;
+    }
 }
 #video1{
     padding: 100px 0px;
