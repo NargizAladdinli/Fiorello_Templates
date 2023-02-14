@@ -1,5 +1,9 @@
+#aboutus{
+    @include Img($wid:$width_100,$heit:320px);
+    @include Ground($ground_pos:center,$ground_size:cover,$ground_attachment:fixed,$ground_repet:no-repeat);
+}
 #video1{
-    padding: 50px 0px;
+    padding: 100px 0px;
     .row{
         @include Flex($f_direction:row-reverse);
         .img{
