@@ -10,15 +10,15 @@
                 @media (max-width:768px) { display: none; }
                 li{
                     .fix{
-                        position: relative;
-                        &::before{
-                            content: '';
-                            @include Img($wid:$width_100,$pos:absolute,$botom:-3px,$left:0,$heit:1px,);
-                            background-color: currentColor;
-                            margin: auto;
-                        }
+                        color: $red_color;
                     }
-                    a{ @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none); }
+                    a{ 
+                        @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            color: $red_color;
+                        }
+                     }
                 }
             }
         }

@@ -23,7 +23,7 @@
         .contact{
             padding: 20px 0px;
             @include Flex($j_content:space-between,$a_items:center);
-            @media (max-width:768px) { @include Flex($f_direction:column); }
+            @media (max-width:768px) {  @include Flex($f_direction:column); }
             .qode{
                 @include Text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h);
                 a{
