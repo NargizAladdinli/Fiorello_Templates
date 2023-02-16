@@ -24,6 +24,26 @@
                 transition: .3s ease-in-out;
                 &:hover{ transform: scale(1.04); }
             }
+            button{
+                @include Img($pos:absolute,$top:35%,$left:40%,$wid:100px,$heit:100px);
+                @include Flex($j_content:center,$a_items:center);
+                @include Text($radius:50px,$ground:$white_color,$border:1px);
+                i{
+                    @include Text($colrs:$red_color,$f_size:30px);
+                }
+            }
+            .modal {
+                @include Img($pos:fixed,$z_index:999,$left:0,$top:0,$wid:100%,$heit:100%,$flow:auto);
+                display: none; 
+                padding-top: 100px; 
+                background-color: rgba(0,0,0,0.4); 
+                .modal-content {
+                    @include Text($ground:none,$border:none);
+                    margin: auto;
+                    width: 50%;
+                    @media (max-width:768px) { width: 100%; }
+                  }
+              }
         }
         .text{
             padding: 0px 90px;

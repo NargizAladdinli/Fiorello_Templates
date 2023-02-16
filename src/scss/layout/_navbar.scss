@@ -9,15 +9,11 @@
                 margin: 0;
                 @media (max-width:768px) { display: none; }
                 li{
-                    .fix{
-                        color: $red_color;
-                    }
+                    .fix{ color: $red_color; }
                     a{ 
                         @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
                         transition: .3s ease-in-out;
-                        &:hover{
-                            color: $red_color;
-                        }
+                        &:hover{ color: $red_color; }
                      }
                 }
             }

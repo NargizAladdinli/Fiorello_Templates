@@ -378,6 +378,29 @@ body {
   color: #f34f3f;
   font-size: 30px;
 }
+#video .img .modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  display: none;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#video .img .modal .modal-content {
+  background: none;
+  border: none;
+  margin: auto;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  #video .img .modal .modal-content {
+    width: 100%;
+  }
+}
 #video .text {
   padding: 0px 90px;
 }
@@ -519,6 +542,12 @@ body {
   border: 1px;
   line-height: 60px;
   font-style: normal;
+}
+#fixed .container #text {
+  display: block;
+  font-weight: 500;
+  padding: 5px;
+  font-style: italic;
 }
 
 #blog {
@@ -692,43 +721,6 @@ body {
   content: "";
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background: none;
-  margin: auto;
-  padding: 20px;
-  width: 50%;
-}
-
-/* The Close Button */
-P .close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 #aboutus {
   display: flex;
   justify-content: center;
@@ -781,6 +773,46 @@ P .close {
 }
 #video1 .row .img img:hover {
   transform: scale(1.04);
+}
+#video1 .row .img button {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px;
+  border-radius: 50px;
+}
+#video1 .row .img button i {
+  color: #f34f3f;
+  font-size: 30px;
+}
+#video1 .row .img .modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  display: none;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#video1 .row .img .modal .modal-content {
+  background: none;
+  border: none;
+  margin: auto;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  #video1 .row .img .modal .modal-content {
+    width: 100%;
+  }
 }
 #video1 .row .text {
   padding: 0px 90px;
