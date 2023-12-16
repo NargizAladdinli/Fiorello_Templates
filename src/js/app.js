@@ -53,33 +53,3 @@ function validation() {
         text.style.color = "#f34f3f"
     }
 }
-
-
-// const form = document.getElementById('form');
-// const email = document.getElementById('email');
-// const text = document.getElementById('text');
-
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
-//     validate();
-// })
-
-// const validate = () => {
-//     const emailVal = email.value.trim();
-//     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-//     if (emailVal.match(pattern)) {
-//         form.classList.add('valid');
-//         form.classList.remove('invalid');
-//         text.innerHTML = "Your Email Address in Valid.";
-//         text.style.color = "#00ff00";
-//     }
-
-//     else {
-//         form.classList.remove('valid');
-//         form.classList.add('invalid');
-//         text.innerHTML = "Please Enter Valid Email Address";
-//         text.style.color = "#f34f3f"
-//     }
-// }

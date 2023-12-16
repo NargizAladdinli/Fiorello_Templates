@@ -1,395 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/cropped-Favicon-180x180.png">
-    <title>Fiorello</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../src/scss/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-</head>
-<body>
-    <!-- Fixed Animatiyani yazmaq -->
-    <header id="menu">
-        <div class="all">
-            <img src="../src/images/logo.png" alt="">
-            <div class="list">
-                <!-- Underline Animatiyani Yazmaq -->
-                <ul>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#" class="dropbtn fix">HOME</a>
-                            <div class="dropdown-content">
-                              <a class="fix" href="../public/index.html">Main Home</a>
-                              <a href="#">Grid Home</a>
-                              <a href="#">Flower Shop</a>
-                              <a href="#">Animated Slider</a>
-                              <a href="#">Metro Showcase</a>
-                              <a href="#">Carusel Showcase</a>
-                              <a href="#">Landing</a>
-                            </div>
-                          </div>  
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#" class="dropbtn">PAGES</a>
-                            <div class="dropdown-content">
-                              <a href="../public/about.html">About Us</a>
-                              <a href="#">FAQ Page</a>
-                              <a href="../public/contact.html">Contact Us</a>
-                            </div>
-                          </div>  
-                    </li>
-                    <li>
-                        <a href="#">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="#">PORTFOLIO</a>
-                    </li>
-                    <li>
-                        <a href="#">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="#">ELEMENTS</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Mobile Menu In JS -->
-            <nav class="mobile-menu">
-                <ul class="nav-link">
-                    <li>
-                        <a href="#" class="fix">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">PAGES</a>
-                    </li>
-                    <li>
-                        <a href="#">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="#">PORTFOLIO</a>
-                    </li>
-                    <li>
-                        <a href="#">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="#">ELEMENTS</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="anime">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">        
-                  <div class="swiper-slide">
-                    <img src="../src/images/kaktus_cvetok.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../src/images/tulpan_cvetok.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../src/images/buket.jpg" alt="">
-                  </div>
-                </div>
-                <div class="swiper-button-next">
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="fa-solid fa-arrow-left-long"></i>
-                </div>
-                <div class="text col-lg-6">
-                    <h2>Send <span>flowers</span> like you mean it.</h2>
-                    <p class="one">Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.</p>
-                    <img src="../src/images/sara.png" alt="" class="sara">
-                </div>
-            </div>
-        </section>
-        <section id="flower">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fiorello flower websites">
+        <meta name="keywords" content="CACTUSES, ROSES, Fiorello, flowers">
+        <link rel="icon"
+            href="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/cropped-Favicon-180x180.png">
+        <title>Fiorello</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+            <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+            <link rel="stylesheet" href="../src/scss/style.css">
+    </head>
+    <body>
+        <header id="menu">
             <div class="container">
-                <div class="list">
-                    <!-- Mobil KAtegoriyasini yazmaq -->
-                    <ul>
-                        <li>
-                            <a href="#" class="fix">ALL</a>
-                        </li>
-                        <li>
-                            <a href="#">CACTUSES</a>
-                        </li>
-                        <li>
-                            <a href="#">EXOTIC</a>
-                        </li>
-                        <li>
-                            <a href="#">GREENS</a>
-                        </li>
-                        <li>
-                            <a href="#">POPULAR</a>
-                        </li>
-                        <li>
-                            <a href="#">VARIOUS</a>
-                        </li>
-                        <li>
-                            <a href="#">WINTER</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Animasiyasini duzelmet -->
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/kaktus.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>MAJESTY PALM</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
+                <div class="all">
+                    <div class="logo">
+                        <img src="../src/images/logo.png" alt>
                     </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/liliya.jpg" alt="">
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="./index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">pages</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Shop</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Elements</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Mobile Menu In JS -->
+                    <nav class="mobile-menu">
+                        <ul class="nav-link">
+                            <li>
+                                <a href="#" class="fix">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">PAGES</a>
+                            </li>
+                            <li>
+                                <a href="#">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="#">PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="#">BLOG</a>
+                            </li>
+                            <li>
+                                <a href="#">ELEMENTS</a>
+                            </li>
+                        </ul>
+                        <div class="burger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
                         </div>
-                        <div class="text">
-                            <h6>FOXGLOVE FLOWER</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/aloye.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>SWEET ALYSSUM</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/tulpan.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>SPRING SNOWFLAKE</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$170</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/rozi.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>SCARLET SAGE</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/aloy.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>ROCK SOAPWORT</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/summer flower.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>SUMMER SAVORY</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 g-3 col-12">
-                        <div class="img">
-                            <img src="../src/images/roza.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h6>WILD ROSES</h6>
-                            <a href="#">Add to cart</a>
-                            <p>$259</p>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </section>
-        <section id="video">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="img">
-                            <img src="../src/images/smile.jpg" alt="">
-                            <button id="myBtn"><i class="fa-brands fa-google-play"></i></button>
-                            <div id="myModal" class="modal">
-                                <div class="modal-content">
-                                  <span class="close"></span>
-                                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/GwSjmpSQ2Wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="text">
-                            <h2>Suprise Your <span>Valentine!</span> Let us arrange a smile.</h2>
-                            <p class="one">Where flowers are our inspiration to create lasting memories. Whatever the occasion...</p>
-                            <div class="heart">
-                                <img src="../src/images/heart.png" alt="">
-                            <p class="two">Hand picked just for you.</p>
-                            </div>
-                            <div class="heart">
-                                <img src="../src/images/heart.png" alt="">
-                            <p class="two">Unique flower arrangements</p>
-                            </div>
-                            <div class="heart">
-                                <img src="../src/images/heart.png" alt="">
-                            <p class="two">Best way to say you care.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="human">
-            <div class="container">
-                <div class="text">
-                    <h2>Flower Experts</h2>
-                    <p>A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="img">
-                            <img src="../src/images/christal.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <h6>CRYSTAL BROOKS</h6>
-                        <span>Florist</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="img">
-                            <img src="../src/images/shirley.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <h6>SHIRLEY HARRIS</h6>
-                        <span>Manager</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="img">
-                            <img src="../src/images/beverly.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <h6>AMANDA WATKINS</h6>
-                        <span>Florist</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="img">
-                            <img src="../src/images/amanda.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <h6>AMANDA WATKINS</h6>
-                        <span>Florist</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //JS Terefini yazmaq -->
-        <section id="fixed" style="background-image: url(../src/images/women.jpg);">
-            <div class="container">
-                <h3>Join The Colorful Bunch!</h3>
-                <form id="form" action="#" novalidate>
-                    <input class="white" type="email" id="email" name="email" placeholder="Email Address" onkeydown="validation()">
-                    <button class="red">Subscribe</button>
-                </form>
-                <span id="text"></span>
-            </div>
-        </section>
-        <section id="blog">
-            <div class="container">
-                <div class="txt">
-                    <h2>From our Blog</h2>
-                    <p>A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
-                </div>
-               <div class="row">
-                <div class="col-lg-4 col-12 g-3">
-                    <div class="all">
-                        <div class="img">
-                            <img src="../src/images/pink_flower.jpg" alt="">
-                            <div class="pos">
-                                <a href="#">27.04.2018</a>
-                            </div>
-                        </div>
-                        <div class="text">
-                            <a href="#" title="Flower power">Flower Power</a>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 g-3">
-                    <div class="all">
-                        <div class="img">
-                            <img src="../src/images/girl_flower.jpg" alt="">
-                            <div class="pos">
-                                <a href="#">03.05.2018</a>
-                            </div>
-                        </div>
-                        <div class="text">
-                            <a href="#" title="Local Florists">Local Florists</a>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 g-3">
-                    <div class="all">
-                        <div class="img">
-                            <img src="../src/images/white_flower.jpg" alt="">
-                            <div class="pos">
-                                <a href="#">03.05.2018</a>
-                            </div>
-                        </div>
-                        <div class="text">
-                            <a href="#" title="Flower Beauty">Flower Beauty</a>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
-                        </div>
-                    </div>
-                </div>
-               </div>
-            </div>
-        </section>
-        <section id="swiper">
-            <div class="container">
+        </header>
+        <main>
+            <section id="anime">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="../src/images/list girl.png" alt="">
-                        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua.</p>
-                        <span class="one">ANNA BARNES</span>
-                        <span class="two">Florist</span>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="../src/images/girl list.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-                        <span class="one">Jasmine White</span>
-                        <span class="two">Florist</span>
-                      </div>
+                        <div class="swiper-slide">
+                            <img src="../src/images/kaktus_cvetok.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../src/images/tulpan_cvetok.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../src/images/buket.jpg" alt>
+                        </div>
                     </div>
                     <div class="swiper-button-next">
                         <i class="fa-solid fa-arrow-right-long"></i>
@@ -397,119 +99,440 @@
                     <div class="swiper-button-prev">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </div>
-                  </div>
+                    <div class="text col-lg-6">
+                        <h2>Send <span>flowers</span> like you mean it.</h2>
+                        <p class="one">Where flowers are our inspiration to
+                            create lasting memories. Whatever the occasion, our
+                            flowers will make it special cursus a sit amet
+                            mauris.</p>
+                        <img src="../src/images/sara.png" alt class="sara">
+                    </div>
+                </div>
+            </section>
+            <section id="flower">
+                <div class="container">
+                    <div class="list">
+                        <!-- Mobil KAtegoriyasini yazmaq -->
+                        <ul>
+                            <li>
+                                <a href="#" class="fix">ALL</a>
+                            </li>
+                            <li>
+                                <a href="#">CACTUSES</a>
+                            </li>
+                            <li>
+                                <a href="#">EXOTIC</a>
+                            </li>
+                            <li>
+                                <a href="#">GREENS</a>
+                            </li>
+                            <li>
+                                <a href="#">POPULAR</a>
+                            </li>
+                            <li>
+                                <a href="#">VARIOUS</a>
+                            </li>
+                            <li>
+                                <a href="#">WINTER</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Animasiyasini duzelmet -->
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/kaktus.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>MAJESTY PALM</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/liliya.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>FOXGLOVE FLOWER</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/aloye.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>SWEET ALYSSUM</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/tulpan.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>SPRING SNOWFLAKE</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$170</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/rozi.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>SCARLET SAGE</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/aloy.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>ROCK SOAPWORT</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/summer flower.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>SUMMER SAVORY</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 g-3 col-12">
+                            <div class="img">
+                                <img src="../src/images/roza.jpg" alt>
+                            </div>
+                            <div class="text">
+                                <h6>WILD ROSES</h6>
+                                <a href="#">Add to cart</a>
+                                <p>$259</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="img">
+                                <img src="../src/images/smile.jpg" alt>
+                                <button id="myBtn"><i
+                                        class="fa-brands fa-google-play"></i></button>
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close"></span>
+                                        <iframe width="100%" height="400"
+                                            src="https://www.youtube.com/embed/GwSjmpSQ2Wc"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="text">
+                                <h2>Suprise Your <span>Valentine!</span> Let us
+                                    arrange a smile.</h2>
+                                <p class="one">Where flowers are our inspiration
+                                    to create lasting memories. Whatever the
+                                    occasion...</p>
+                                <div class="heart">
+                                    <img src="../src/images/heart.png" alt>
+                                    <p class="two">Hand picked just for you.</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="../src/images/heart.png" alt>
+                                    <p class="two">Unique flower arrangements</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="../src/images/heart.png" alt>
+                                    <p class="two">Best way to say you care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="human">
+                <div class="container">
+                    <div class="text">
+                        <h2>Flower Experts</h2>
+                        <p>A perfect blend of creativity, energy, communication,
+                            happiness and love. Let us arrange a smile for you.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src="../src/images/christal.png" alt>
+                            </div>
+                            <div class="txt">
+                                <h6>CRYSTAL BROOKS</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src="../src/images/shirley.png" alt>
+                            </div>
+                            <div class="txt">
+                                <h6>SHIRLEY HARRIS</h6>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src="../src/images/beverly.png" alt>
+                            </div>
+                            <div class="txt">
+                                <h6>AMANDA WATKINS</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src="../src/images/amanda.png" alt>
+                            </div>
+                            <div class="txt">
+                                <h6>AMANDA WATKINS</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //JS Terefini yazmaq -->
+            <section id="fixed"
+                style="background-image: url(../src/images/women.jpg);">
+                <div class="container">
+                    <h3>Join The Colorful Bunch!</h3>
+                    <form id="form" action="#" novalidate>
+                        <input class="white" type="email" id="email"
+                            name="email" placeholder="Email Address"
+                            onkeydown="validation()">
+                        <button class="red">Subscribe</button>
+                    </form>
+                    <span id="text"></span>
+                </div>
+            </section>
+            <section id="blog">
+                <div class="container">
+                    <div class="txt">
+                        <h2>From our Blog</h2>
+                        <p>A perfect blend of creativity, energy, communication,
+                            happiness and love. Let us arrange a smile for you.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-12 g-3">
+                            <div class="all">
+                                <div class="img">
+                                    <img src="../src/images/pink_flower.jpg" alt>
+                                    <div class="pos">
+                                        <a href="#">27.04.2018</a>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="#" title="Flower power">Flower
+                                        Power</a>
+                                    <p>Class aptent taciti sociosqu ad litora
+                                        torquent per conubia nostra, per</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 g-3">
+                            <div class="all">
+                                <div class="img">
+                                    <img src="../src/images/girl_flower.jpg" alt>
+                                    <div class="pos">
+                                        <a href="#">03.05.2018</a>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="#" title="Local Florists">Local
+                                        Florists</a>
+                                    <p>Class aptent taciti sociosqu ad litora
+                                        torquent per conubia nostra, per</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 g-3">
+                            <div class="all">
+                                <div class="img">
+                                    <img src="../src/images/white_flower.jpg"
+                                        alt>
+                                    <div class="pos">
+                                        <a href="#">03.05.2018</a>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="#" title="Flower Beauty">Flower
+                                        Beauty</a>
+                                    <p>Class aptent taciti sociosqu ad litora
+                                        torquent per conubia nostra, per</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="swiper">
+                <div class="container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../src/images/list girl.png" alt>
+                                <p>Nullam dictum felis eu pede mollis pretium.
+                                    Integer tincidunt. Cras dapibus lingua.</p>
+                                <span class="one">ANNA BARNES</span>
+                                <span class="two">Florist</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../src/images/girl list.png" alt>
+                                <p>Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget.</p>
+                                <span class="one">Jasmine White</span>
+                                <span class="two">Florist</span>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sd-6 col-12">
+                        <h6>CUSTOMER SERVICE</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Help & Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns & Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#">Online Stores</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sd-6 col-12">
+                        <h6>COMPANY</h6>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Tracking</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sd-6 col-12">
+                        <h6>SOCIAL MEDIA</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Tumblr</a>
+                            </li>
+                            <li>
+                                <a href="#">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sd-6 col-12">
+                        <h6>ARCHIVE</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Designer Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Feature Index</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Help & Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="contact">
+                    <div class="qode">
+                        © 2018
+                        <a href="#" target="_blank">Qode Interactive</a>
+                        ,All Rights Reserved
+                    </div>
+                    <div class="cart">
+                        <a href="#">
+                            <img src="../src/images/cart.png" alt>
+                        </a>
+                    </div>
+                    <div class="sosial">
+                        <a href="#" target="_blank">INSTAGRAM</a>
+                        <a href="#" target="_blank">FACEBOOK</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer id="end">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sd-6 col-12">
-                    <h6>CUSTOMER SERVICE</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Help & Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Returns & Refunds</a>
-                        </li>
-                        <li>
-                            <a href="#">Online Stores</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sd-6 col-12">
-                    <h6>COMPANY</h6>
-                    <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Order Tracking</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sd-6 col-12">
-                    <h6>SOCIAL MEDIA</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#">Tumblr</a>
-                        </li>
-                        <li>
-                            <a href="#">Pinterest</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sd-6 col-12">
-                    <h6>ARCHIVE</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Designer Shoes</a>
-                        </li>
-                        <li>
-                            <a href="#">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#">Feature Index</a>
-                        </li>
-                        <li>
-                            <a href="#">Login</a>
-                        </li>
-                        <li>
-                            <a href="#">Help & Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="contact">
-                <div class="qode">
-                    © 2018 
-                    <a href="#" target="_blank">Qode Interactive</a>
-                    ,All Rights Reserved
-                </div>
-                <div class="cart">
-                    <a href="#">
-                        <img src="../src/images/cart.png" alt="">
-                    </a>
-                </div>
-                <div class="sosial">
-                    <a href="#" target="_blank">INSTAGRAM</a>
-                    <a href="#" target="_blank">FACEBOOK</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../src/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/610cd415f0.js" crossorigin="anonymous"></script>
-    <script>
+        </footer>
+        <script src="../src/js/app.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/610cd415f0.js"
+            crossorigin="anonymous"></script>
+        <script>
         var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,
@@ -527,5 +550,5 @@
       },
     });
     </script>
-</body>
+    </body>
 </html>

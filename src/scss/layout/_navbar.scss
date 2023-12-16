@@ -1,40 +1,59 @@
-#menu{
-    padding: 30px 0px;
-    .all{
-        @include Flex($j_content:space-around,$a_items:center);
-        img{ @include Img($wid:210px,$o_fit:cover,$o_pos:center) }
-        .list{
-            ul{
-                @include Flex($a_items:center,$gap:50px);
-                margin: 0;
-                @media (max-width:768px) { display: none; }
-                li{
-                    .fix{ color: $red_color; }
-                    a{ 
-                        @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none);
-                        transition: .3s ease-in-out;
-                        &:hover{ color: $red_color; }
-                     }
+#menu {
+    padding: 46px 0px;
+    .all {
+        @include Flex($j_content: space-between, $a_items: center);
+        .logo {
+            width: 205px;
+            img {
+                @include Img($wid: 100%, $o_fit: cover, $o_pos: center)
+            }
+        }
+        .menu {
+            .menu-list {
+                @include Flex($gap: 57px);
+                li {
+                    a {
+                        @include Text($colrs: #1B1B1B, $f_size: 12px, $f_weight: 500, $l_heit: 12px, $l_spacing: 1.2px, $transform: uppercase);
+                        position: relative;
+                        &::after{
+                            content: '';
+                            @include Img($pos:absolute,$top:100%,$left:0,$wid:0%,$heit:1px);
+                            background: currentColor;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            &::after{
+                                width: 100%;
+                            }
+                        }
+                    }
                 }
             }
         }
-        .mobile-menu{
+        .mobile-menu {
             display: none;
+
             @media (max-width:768px) {
                 display: block;
-                .nav-link{
-                    @include Flex($a_items:center,$gap:20px,$f_direction:column);
-                    @include Img($pos:absolute,$top:90px,$right:0px,$wid:100%,$heit:50vh,$z_index:999);
+
+                .nav-link {
+                    @include Flex($a_items: center, $gap: 20px, $f_direction: column);
+                    @include Img($pos: absolute, $top: 90px, $right: 0px, $wid: 100%, $heit: 50vh, $z_index: 999);
                     background-color: $white_color;
                     transform: translateX(100%);
                     transition: .9s ease-in-out;
-                    li{
-                        a{ @include Text($f_size:12px,$f_style:normal,$f_weight:$weight_500,$l_heit:22px,$colrs:$b1_color,$l_spacing:1.2px,$t_decoration:none); }
+
+                    li {
+                        a {
+                            @include Text($f_size: 12px, $f_style: normal, $f_weight: $weight_500, $l_heit: 22px, $colrs: $b1_color, $l_spacing: 1.2px, $t_decoration: none);
+                        }
                     }
                 }
-                .burger{
+
+                .burger {
                     cursor: pointer;
-                    .bar{
+
+                    .bar {
                         width: 25px;
                         height: 3px;
                         background-color: $red_color;
@@ -45,35 +64,3 @@
         }
     }
 }
-.nav-active{
-    transform: translateX(0) !important;
-}
-// Dropdown menu
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 999;
-    &:hover{
-        .dropdown-content{ display: block; }
-    }
-    .dropbtn {
-        color: white;
-        border: none;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: $white_color;
-        min-width: 200px;
-        top: 25px;
-        left: -35px;
-        padding: 20px 0px;
-        z-index: 1;
-        transition: .9s ease-in-out;
-        a {
-         padding: 12px 35px;
-         display: block;
-       }
-      }
-      
-  }
