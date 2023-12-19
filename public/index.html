@@ -20,31 +20,52 @@
             <link rel="stylesheet" href="../src/scss/style.css">
     </head>
     <body>
-        <header id="menu">
+        <!-- Header Start -->
+        <header class="header">
             <div class="container">
                 <div class="all">
                     <div class="logo">
-                        <img src="../src/images/logo.png" alt>
+                        <img src="../public/images/logo.png" alt>
                     </div>
                     <nav class="menu">
                         <ul class="menu-list">
                             <li>
                                 <a href="./index.html">home</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="./index.html">Salam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salam</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="./index.html">pages</a>
+                                <a href="#">pages</a>
                             </li>
                             <li>
-                                <a href="./index.html">Shop</a>
+                                <a href="#">Shop</a>
                             </li>
                             <li>
-                                <a href="./index.html">Portfolio</a>
+                                <a href="#">Portfolio</a>
                             </li>
                             <li>
-                                <a href="./index.html">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                             <li>
-                                <a href="./index.html">Elements</a>
+                                <a href="#">Elements</a>
                             </li>
                         </ul>
                     </nav>
@@ -79,18 +100,20 @@
                 </div>
             </div>
         </header>
+        <!-- Header end -->
         <main>
+            <!-- Swiper in JS start -->
             <section id="anime">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="../src/images/kaktus_cvetok.jpg" alt>
+                            <img src="../public/images/kaktus_cvetok.jpg" alt>
                         </div>
                         <div class="swiper-slide">
-                            <img src="../src/images/tulpan_cvetok.jpg" alt>
+                            <img src="../public/images/tulpan_cvetok.jpg" alt>
                         </div>
                         <div class="swiper-slide">
-                            <img src="../src/images/buket.jpg" alt>
+                            <img src="../public/images/buket.jpg" alt>
                         </div>
                     </div>
                     <div class="swiper-button-next">
@@ -109,6 +132,9 @@
                     </div>
                 </div>
             </section>
+            <!-- Swiper in Js end -->
+
+            <!-- Filter Gallery start  -->
             <section id="flower">
                 <div class="container">
                     <div class="list">
@@ -141,7 +167,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 g-3 col-12">
                             <div class="img">
-                                <img src="../src/images/kaktus.jpg" alt>
+                                <img src="../public/images/kaktus.jpg" alt>
                             </div>
                             <div class="text">
                                 <h6>MAJESTY PALM</h6>
@@ -222,6 +248,9 @@
                     </div>
                 </div>
             </section>
+            <!-- Filter Gallery end  -->
+
+            <!-- Modal video in Js start  -->
             <section id="video">
                 <div class="container">
                     <div class="row">
@@ -267,6 +296,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Modal video in Js end  -->
             <section id="human">
                 <div class="container">
                     <div class="text">
@@ -520,7 +550,6 @@
                 </div>
             </div>
         </footer>
-        <script src="../src/js/app.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -532,6 +561,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/610cd415f0.js"
             crossorigin="anonymous"></script>
+            <script src="../src/js/modal.js"></script>
         <script>
         var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,

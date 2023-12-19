@@ -25,13 +25,14 @@
             img{
                 @include Img($wid:$width_100,$o_fit:cover,$heit:477px);
                 transform: scale(1);
-                animation: scale 9s linear infinite;
+                animation: scale 7s linear infinite alternate;
                 @keyframes scale {
-                    0%{ transform: scale(1.01); }
-                    20%{ transform: scale(1.03); }
-                    40%{ transform: scale(1.05); }
-                    60%{ transform: scale(1.07); }
-                    80%{ transform: scale(1.09); }
+                    to{
+                        transform: scale(1.09);
+                    }
+                    from{
+                        transform: scale(1);
+                    }
                 }
             }
             p{

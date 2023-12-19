@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital@0;1&display=swap');
 
-@import "partials/varaible";
 @import "partials/mixin";
-@import "layout/navbar";
+@import "partials/varaible";
+@import 'partials/extend';
 @import "common/common";
-@import "pages/home/index";
-@import "pages/about/about.scss";
-@import "pages/home/contact";
-@import "layout/footer";
+@import "layout/navbar";
+// @import "pages/home/index";
+// @import "pages/about/about.scss";
+// @import "pages/contact/contact";
+// @import "layout/footer";
