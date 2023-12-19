@@ -14,10 +14,10 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
-            <link
+        <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-            <link rel="stylesheet" href="../src/scss/style.css">
+        <link rel="stylesheet" href="../src/scss/style.css">
     </head>
     <body>
         <!-- Header Start -->
@@ -33,41 +33,104 @@
                                 <a href="./index.html">home</a>
                                 <ul class="dropdown">
                                     <li>
-                                        <a href="./index.html">Salam</a>
+                                        <a class="dropdown_link" href="./index.html">Main Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salam</a>
+                                        <a class="dropdown_link" href="#">Grid Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salam</a>
+                                        <a class="dropdown_link" href="#">Flower Shop</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salam</a>
+                                        <a class="dropdown_link" href="#">Animated Slider</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salam</a>
+                                        <a class="dropdown_link" href="#">Metro Showcase</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salam</a>
+                                        <a class="dropdown_link" href="#">Carousel Showcase</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Landing</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">pages</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a class="dropdown_link" href="./index.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">FAQ Page</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Shop</a>
                             </li>
                             <li>
                                 <a href="#">Portfolio</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a class="dropdown_link" href="./index.html">Standard</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Masonry</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Portfolio Layouts</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Portfolio Single</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Blog</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a class="dropdown_link" href="./index.html">Masonry</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Standard</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Post Types</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Elements</a>
+                                <ul class="dropdown end">
+                                    <li>
+                                        <a class="dropdown_link" href="./index.html">Classic</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Infographic</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Interactive</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown_link" href="#">Typography</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+                        <div class="cart">
+                            <a href="">
+                                <span>M</span>
+                                <span>cart</span>
+                                <span>($0)</span>
+                            </a>
+                        </div>
                     </nav>
                     <!-- Mobile Menu In JS -->
                     <nav class="mobile-menu">
@@ -447,6 +510,7 @@
                 </div>
             </section>
         </main>
+        <!-- Footer start  -->
         <footer id="end">
             <div class="container">
                 <div class="row">
@@ -550,6 +614,7 @@
                 </div>
             </div>
         </footer>
+        <!-- Footer end  -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -561,7 +626,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/610cd415f0.js"
             crossorigin="anonymous"></script>
-            <script src="../src/js/modal.js"></script>
+        <script src="../src/js/modal.js"></script>
         <script>
         var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,

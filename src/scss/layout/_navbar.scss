@@ -9,6 +9,7 @@
             }
         }
         .menu {
+            @include flex($gap: 50px);
             .menu-list {
                 @include flex($gap: 57px);
                 li {
@@ -34,12 +35,27 @@
                             }
                         }
                     }
+                    .end{
+                        text-align: end;
+                    }
                     .dropdown{
-                        @include position($position:absolute,$top:100%,$left:0,$z_index:2);
+                        @include position($position:absolute,$top:100%,$left:-30px,$z_index:2);
                         padding-top: 40px;
                         background-color: #fff;
                         display: none;
+                        width: 210px;
+                        li{
+                            padding: 8px 26px;
+                            .dropdown_link{
+                                text-transform: capitalize;
+                            }
+                        }
                     }
+                }
+            }
+            .cart{
+                a{
+                    @include text($colrs: #1B1B1B, $f_size: 12px, $f_weight: 500, $l_heit: 12px, $l_spacing: 1.2px, $t_transform: uppercase);
                 }
             }
         }
