@@ -104,6 +104,10 @@ input {
 .header .all .menu .menu-list li .dropdown li .dropdown_link {
   text-transform: capitalize;
 }
+.header .all .menu .menu-list li .container_content .dropwidth {
+  width: 1340px;
+  transform: translateX(-57%);
+}
 .header .all .menu .cart a {
   color: #1B1B1B;
   font-size: 12px;
@@ -112,11 +116,12 @@ input {
   line-height: 12px;
   text-transform: uppercase;
 }
-.header .all .mobile-menu {
+
+.mobile-menu {
   display: block;
 }
 @media (min-width: 992px) {
-  .header .all .mobile-menu {
+  .mobile-menu {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
