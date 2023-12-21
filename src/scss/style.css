@@ -50,8 +50,7 @@ input {
      object-position: center;
 }
 .header .all .menu {
-  display: flex;
-  gap: 50px;
+  display: none;
 }
 .header .all .menu .menu-list {
   display: flex;
@@ -85,9 +84,6 @@ input {
 .header .all .menu .menu-list li a:hover::after {
   width: 100%;
 }
-.header .all .menu .menu-list li .end {
-  text-align: end;
-}
 .header .all .menu .menu-list li .dropdown {
   position: absolute;
   top: 100%;
@@ -97,6 +93,7 @@ input {
   background-color: #fff;
   display: none;
   width: 210px;
+  padding: 55px 0 10px 0;
 }
 .header .all .menu .menu-list li .dropdown li {
   padding: 8px 26px;
@@ -108,6 +105,18 @@ input {
   width: 1340px;
   transform: translateX(-57%);
 }
+.header .all .menu .menu-list li .container_content .dropwidth .flexbl {
+  display: flex;
+  justify-content: space-around;
+}
+.header .all .menu .menu-list li .container_content .dropwidth .flexbl .downlist h5 {
+  padding: 0 26px 14px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: #1B1B1B;
+  font-size: 22px;
+  line-height: 1.1rem;
+}
 .header .all .menu .cart a {
   color: #1B1B1B;
   font-size: 12px;
@@ -116,11 +125,17 @@ input {
   line-height: 12px;
   text-transform: uppercase;
 }
+@media (min-width: 1200px) {
+  .header .all .menu {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .mobile-menu {
   display: block;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .mobile-menu {
     display: none;
   }

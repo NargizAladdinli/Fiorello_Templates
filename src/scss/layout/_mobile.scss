@@ -1,6 +1,6 @@
 .mobile-menu {
     display: block;
-    @include breakpoint('large'){
+    @include breakpoint('wide'){
         display: none;
     }
     // @media (max-width:768px) {
