@@ -42,6 +42,7 @@
                         display: none;
                         width: 210px;
                         padding: 55px 0 10px 0;
+                        box-shadow: 0 5px 5px 0 rgba(0,0,0,.03);
                         li{
                             padding: 8px 26px;
                             .dropdown_link{
@@ -51,8 +52,13 @@
                     }
                     .container_content{
                         .dropwidth{
-                            width: 1340px;
-                            transform: translateX(-57%);
+                            width: 1140px;
+                            transform: translateX(-49%);
+                            top: 110%;
+                            @media (min-width:1250px) {
+                                transform: translateX(-57%);
+                                width: 1340px;
+                            }
                             .flexbl{
                                 @include flex($j_content:space-around);
                                 .downlist{
