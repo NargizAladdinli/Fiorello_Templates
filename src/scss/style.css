@@ -15,6 +15,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   line-height: 24px;
+  overflow-x: hidden;
 }
 
 ul {
@@ -148,5 +149,82 @@ input {
     display: none;
   }
 }
-
-@impor;/*# sourceMappingURL=style.css.map */
+.mobile-menu .nav-link {
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  z-index: 11;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: 0.9s ease-in-out;
+  padding: 0px 30px;
+}
+.mobile-menu .nav-link .close {
+  text-align: end;
+}
+.mobile-menu .nav-link .close button {
+  border: none;
+  background: none;
+  width: 20px;
+  color: #f34f3f;
+  font-size: 20px;
+}
+.mobile-menu .nav-link li {
+  padding-top: 20px;
+}
+.mobile-menu .nav-link li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 22px;
+  font-style: normal;
+}
+.mobile-menu .burger {
+  cursor: pointer;
+}
+.mobile-menu .burger:hover button::after {
+  background: #f34f3f;
+}
+.mobile-menu .burger:hover button::before {
+  background: #f34f3f;
+}
+.mobile-menu .burger:hover button span {
+  background: #f34f3f;
+}
+.mobile-menu .burger button {
+  border: none;
+  background: none;
+  width: 20px;
+  position: relative;
+}
+.mobile-menu .burger button::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6d6a6a;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-menu .burger button::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6d6a6a;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-menu .burger button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6d6a6a;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

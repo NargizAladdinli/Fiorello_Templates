@@ -1,34 +1,72 @@
 .mobile-menu {
-    display: block;
     @include breakpoint('wide'){
         display: none;
     }
-    // @media (max-width:768px) {
-    //     display: block;
-
-    //     .nav-link {
-    //         @include Flex($a_items: center, $gap: 20px, $f_direction: column);
-    //         @include Img($pos: absolute, $top: 90px, $right: 0px, $wid: 100%, $heit: 50vh, $z_index: 999);
-    //         background-color: $white_color;
-    //         transform: translateX(100%);
-    //         transition: .9s ease-in-out;
-
-    //         li {
-    //             a {
-    //                 @include Text($f_size: 12px, $f_style: normal, $f_weight: $weight_500, $l_heit: 22px, $colrs: $b1_color, $l_spacing: 1.2px, $t_decoration: none);
-    //             }
-    //         }
-    //     }
-
-    //     .burger {
-    //         cursor: pointer;
-
-    //         .bar {
-    //             width: 25px;
-    //             height: 3px;
-    //             background-color: $red_color;
-    //             margin: 5px;
-    //         }
-    //     }
-    // }
+    .nav-link {
+        .close{
+            text-align: end;
+            button{
+                border: none;
+                background: none;
+                width: 20px;
+                color: #f34f3f;
+                font-size: 20px;
+            }
+        }
+        @include img($wid: 80%, $heit: 100vh);
+        @include position($position:absolute,$right:0px,$z_index:11);
+        background-color: $white_color;
+        transform: translateX(100%);
+        transition: .9s ease-in-out;
+        padding: 0px 30px;
+        li {
+            padding-top: 20px;
+            a {
+                @include text($f_size: 12px, $f_style: normal, $f_weight: $weight_500, $l_heit: 22px, $colrs: $b1_color, $l_spacing: 1.2px, $t_decoration: none);
+            }
+        }
+    }
+    .burger{
+        cursor: pointer;
+        &:hover{
+            button{
+                &::after{
+                    background:#f34f3f;
+                }
+                &::before{
+                    background:#f34f3f;
+                }
+                span{
+                    background:#f34f3f;
+                }
+            }
+        }
+       button{
+        border: none;
+        background: none;
+        width: 20px;
+        position: relative;
+        &::after{
+            content: '';
+            @include position($position:absolute,$left:0,$top:5px);
+            @include img($wid:100%,$heit:2px);
+            background:#6d6a6a;
+            transition: all 0.3s ease-in-out;
+        }
+        &::before{
+            content: '';
+            @include position($position:absolute,$left:0,$top:-4px);
+            @include img($wid:100%,$heit:2px);
+            background:#6d6a6a;
+            transition: all 0.3s ease-in-out;
+        }
+        span{
+            @include position($position:absolute,$left:0);
+            @include img($wid:100%,$heit:2px);
+            background:#6d6a6a;
+            transition: all 0.3s ease-in-out;
+        }
+       }
+    }
+    display: block;
 }
