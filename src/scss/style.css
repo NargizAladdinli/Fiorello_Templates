@@ -227,4 +227,120 @@ input {
   height: 2px;
   background: #6d6a6a;
   transition: all 0.3s ease-in-out;
+}
+
+.anime .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.anime .swiper .text {
+  padding: 0px 50px 0 0;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: 11;
+}
+@media (min-width: 1200px) {
+  .anime .swiper .text {
+    position: absolute;
+    top: 15%;
+    left: 50px;
+    z-index: 9;
+    padding: 0px 186px;
+  }
+}
+.anime .swiper .text h2 {
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+.anime .swiper .text h2 span {
+  color: #f34f3f;
+}
+.anime .swiper .text .one {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  font-family: "Lora", serif;
+  padding: 20px 0px;
+}
+.anime .swiper .text .sara {
+  width: 197px;
+  height: 56px;
+}
+.anime .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.anime .swiper .swiper-slide img {
+  width: 100%;
+  height: 477px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  animation: scale 7s linear infinite alternate;
+}
+@keyframes scale {
+  to {
+    transform: scale(1.09);
+  }
+  from {
+    transform: scale(1);
+  }
+}
+.anime .swiper .swiper-slide p {
+  padding: 30px 0px;
+  color: #4B4747;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 36px;
+  font-style: italic;
+  font-family: "Lora", serif;
+}
+.anime .swiper .swiper-slide .one {
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .anime .swiper .swiper-button-next {
+    display: none;
+  }
+}
+.anime .swiper .swiper-button-next i {
+  color: #b5b0b0;
+  font-size: 40px;
+  transition: 0.3s ease-in-out;
+}
+.anime .swiper .swiper-button-next i:hover {
+  color: #1b1b1b;
+}
+.anime .swiper .swiper-button-next::after {
+  content: "";
+}
+@media (max-width: 768px) {
+  .anime .swiper .swiper-button-prev {
+    display: none;
+  }
+}
+.anime .swiper .swiper-button-prev i {
+  color: #b5b0b0;
+  font-size: 40px;
+  transition: 0.3s ease-in-out;
+}
+.anime .swiper .swiper-button-prev i:hover {
+  color: #1b1b1b;
+}
+.anime .swiper .swiper-button-prev::after {
+  content: "";
 }/*# sourceMappingURL=style.css.map */
