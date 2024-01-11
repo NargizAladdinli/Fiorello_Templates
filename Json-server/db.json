@@ -1,0 +1,55 @@
+{
+    "categoryList":[
+        {
+            "id":1,
+            "name":"ALL"
+        },
+        {
+            "id":2,
+            "name":"CACTUSES"
+        },
+        {
+            "id":3,
+            "name":"EXOTIC"
+        },
+        {
+            "id":4,
+            "name":"GREENS"
+        },
+        {
+            "id":5,
+            "name":"POPULAR"
+        },
+        {
+            "id":6,
+            "name":"VARIOUS"
+        },
+        {
+            "id":7,
+            "name":"WINTER"
+        }
+    ],
+    "category":[
+        {
+            "id":1,
+            "name":"POPULAR",
+            "title":"MAJESTY PALM",
+            "imgUrl":"https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
+            "price":259
+        },
+        {
+            "id":2,
+            "name":"POPULAR",
+            "title":"FOXGLOVE FLOWER",
+            "imgUrl":"https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
+            "price":259
+        },
+        {
+            "id":3,
+            "name":"POPULAR",
+            "title":"SWEET ALYSSUM",
+            "imgUrl":"https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg",
+            "price":259
+        }
+    ]
+}

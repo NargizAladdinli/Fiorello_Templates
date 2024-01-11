@@ -1,0 +1,43 @@
+#flower{
+    padding: 50px 0px;
+    .container{
+        .list{
+            ul{
+                @include flex($a_items:center,$gap:40px);
+                li{
+                    .fix{ color: $red_color; }
+                    a{
+                        @include text($t_decoration:none,$f_size:$tag_size,$l_heit:24px,$f_weight:$weight_500,$f_style:normal,$colrs:$b1_color);
+                        transition: .3s ease-in-out;
+                        &:hover{ color: $red_color; }
+                    }
+                }
+            }
+        }
+        .img{
+            @include img($wid:$width_100);
+            img{
+                @include img($wid:$width_100,$heit:100%,$o_fit:cover,$o_pos:center);
+                transform: scale(1);
+                transition: .3s ease-in-out;
+                padding: 20px 0px;
+                &:hover{
+                    transform: scale(1.04);
+                }
+            }
+        }
+        .text{
+            text-align: center;
+            h6{
+                @include text($f_weight:$weight_500,$f_size:12px,$l_heit:12px,$f_style:normal);
+            }
+            a{
+                @include text($t_decoration:none,$f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+               display: none;
+            }
+            p{
+                @include text($f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+            }
+        }
+    }
+}
