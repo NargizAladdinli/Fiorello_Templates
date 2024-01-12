@@ -8,7 +8,7 @@ async function getCategroryList() {
     .then((data) => {
       data.forEach((user) => {
         const list = `
-            <li>
+            <li class='lien'>
                 <a href="#">${user.name}</a>
             </li>
             `;
@@ -19,11 +19,10 @@ async function getCategroryList() {
     .catch((err) => {
       console.log(err);
     });
-}
-
-getCategroryList();
-
-
+  }
+  
+  getCategroryList();
+  const filter = document.querySelectorAll(".lien a");
 
 async function getCategrory() {
   await fetch(`${url}/category`)
@@ -31,16 +30,22 @@ async function getCategrory() {
       return res.json();
     })
     .then((data) => {
-      data.forEach((user) => {
+      data.slice(0,8).forEach((user) => {
         const cards = `
-        <div class="col-lg-3 col-sm-6 g-3 col-12">
+        <div data-name=${user.name} class="slice col-sm-6 col-lg-3">
+        <div class='cart'>
+        <a href='#'>
         <div class="img">
             <img src=${user.imgUrl} alt>
         </div>
         <div class="text">
-            <h6>FOXGLOVE FLOWER</h6>
-            <a href="#">Add to cart</a>
-            <p>$259</p>
+            <h6>${user.title}</h6>
+            <div class="add">
+            <a href="#" class="tocart">Add to cart</a>
+            <span>$${user.price}</span>
+            </div>
+        </div>
+        </a>
         </div>
     </div>
             `;
@@ -54,3 +59,18 @@ async function getCategrory() {
 }
 
 getCategrory();
+
+
+const slice = document.querySelectorAll('.slice');
+console.log(filter);
+
+filter.forEach((i) => {
+  i.onclick = () => {
+    filter.forEach((btn) => {
+      btn.className = ' ';
+    })
+    i.className = 'fix'
+  }
+})
+
+

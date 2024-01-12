@@ -14,29 +14,56 @@
                 }
             }
         }
-        .img{
-            @include img($wid:$width_100);
-            img{
-                @include img($wid:$width_100,$heit:100%,$o_fit:cover,$o_pos:center);
-                transform: scale(1);
-                transition: .3s ease-in-out;
-                padding: 20px 0px;
-                &:hover{
-                    transform: scale(1.04);
+        .cart{
+            &:hover{
+                .img{
+                    transform: scale(1.02);
+                }
+                .text{
+                    .add{
+                        span{
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translateX(20px);
+                        }
+                        .tocart{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateX(20px);
+                        }
+                    }
                 }
             }
-        }
-        .text{
-            text-align: center;
-            h6{
-                @include text($f_weight:$weight_500,$f_size:12px,$l_heit:12px,$f_style:normal);
+            .img{
+                @include img($wid:$width_100);
+                transform: scale(1);
+                transition: .3s ease-in-out;
+                img{
+                    @include img($wid:$width_100,$heit:100%,$o_fit:cover,$o_pos:center);
+                    padding: 20px 0px;
+                }
             }
-            a{
-                @include text($t_decoration:none,$f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
-               display: none;
-            }
-            p{
-                @include text($f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+            .text{
+                text-align: center;
+                h6{
+                    @include text($f_weight:$weight_500,$f_size:12px,$l_heit:12px,$f_style:normal,$colrs:#1b1b1b);
+                }
+                .add{
+                    span,a{
+                        @include text($f_style:normal,$f_weight:$weight_400,$f_size:12px,$l_heit:12px,$colrs:$gray_color);
+                        display: inline-block;
+                    }
+                    .tocart{
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateX(-20px);
+                        transition: all 0.5s ease-in-out;
+                    }
+                    span{
+                        transform: translateX(-40px);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
             }
         }
     }
