@@ -345,18 +345,18 @@ input {
   content: "";
 }
 
-#flower {
+.flower {
   padding: 50px 0px;
 }
-#flower .container .list ul {
+.flower .container .list ul {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-#flower .container .list ul li .fix {
+.flower .container .list ul li .fix {
   color: #f34f3f;
 }
-#flower .container .list ul li a {
+.flower .container .list ul li a {
   text-decoration: none;
   color: #1b1b1b;
   font-size: 12px;
@@ -365,28 +365,28 @@ input {
   font-style: normal;
   transition: 0.3s ease-in-out;
 }
-#flower .container .list ul li a:hover {
+.flower .container .list ul li a:hover {
   color: #f34f3f;
 }
-#flower .container .cart:hover .img {
+.flower .container .cart:hover .img {
   transform: scale(1.02);
 }
-#flower .container .cart:hover .text .add span {
+.flower .container .cart:hover .text .add span {
   opacity: 0;
   visibility: hidden;
   transform: translateX(20px);
 }
-#flower .container .cart:hover .text .add .tocart {
+.flower .container .cart:hover .text .add .tocart {
   opacity: 1;
   visibility: visible;
   transform: translateX(20px);
 }
-#flower .container .cart .img {
+.flower .container .cart .img {
   width: 100%;
   transform: scale(1);
   transition: 0.3s ease-in-out;
 }
-#flower .container .cart .img img {
+.flower .container .cart .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -395,17 +395,17 @@ input {
      object-position: center;
   padding: 20px 0px;
 }
-#flower .container .cart .text {
+.flower .container .cart .text {
   text-align: center;
 }
-#flower .container .cart .text h6 {
+.flower .container .cart .text h6 {
   color: #1b1b1b;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   font-style: normal;
 }
-#flower .container .cart .text .add span, #flower .container .cart .text .add a {
+.flower .container .cart .text .add span, .flower .container .cart .text .add a {
   color: #afafaf;
   font-size: 12px;
   font-weight: 400;
@@ -413,13 +413,112 @@ input {
   font-style: normal;
   display: inline-block;
 }
-#flower .container .cart .text .add .tocart {
+.flower .container .cart .text .add .tocart {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-20px);
   transition: all 0.5s ease-in-out;
 }
-#flower .container .cart .text .add span {
+.flower .container .cart .text .add span {
   transform: translateX(-40px);
   transition: all 0.5s ease-in-out;
+}
+
+.video {
+  background-color: #f8f8f8;
+  padding: 50px 0px;
+}
+.video .img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.video .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.video .img img:hover {
+  transform: scale(1.04);
+}
+.video .img button {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px;
+  border-radius: 50px;
+}
+.video .img button i {
+  color: #f34f3f;
+  font-size: 30px;
+}
+.video .img .modal {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.video .img .modal .modal-content {
+  background: none;
+  border: none;
+  margin: auto;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .video .img .modal .modal-content {
+    width: 100%;
+  }
+}
+.video .text {
+  padding: 0px 90px;
+}
+.video .text h2 {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+.video .text h2 span {
+  color: #f34f3f;
+}
+.video .text .one {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  font-family: "Lora", serif;
+  padding: 20px 0px;
+}
+.video .text .heart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.video .text .heart .two {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
