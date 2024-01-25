@@ -521,4 +521,58 @@ input {
   line-height: 29px;
   font-style: normal;
   margin: 0;
+}
+
+.human .container .text {
+  padding: 50px 0px;
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+}
+.human .container .text h2 {
+  color: #2b2b2b;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 55px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+}
+.human .container .text p {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  font-family: "Lora", serif;
+}
+.human .container .img {
+  width: 222px;
+  height: 222px;
+  margin: auto;
+}
+.human .container .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.human .container .txt {
+  text-align: center;
+  padding: 30px 0px;
+}
+.human .container .txt h6 {
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
+}
+.human .container .txt span {
+  color: #afafaf;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.human{
+    .container{
+        .text{
+            padding: 50px 0px;
+            margin-left: 25%;
+            width: 50%;
+            text-align: center;
+            h2{
+                @include text($f_style:normal,$f_weight:$weight_400,$f_size:38px,$l_heit:55px,$colrs:$h2_color);
+                font-family: 'Playfair Display', serif;
+            }
+            p{
+                @include text($colrs:$dark_gray,$f_style:normal,$f_weight:$weight_400,$f_size:17px,$l_heit:29px);
+                font-family: 'Lora', serif;
+            }
+        }
+        .img{
+            @include img($wid:222px,$heit:222px);
+            margin: auto;
+            img{ @include img($wid:100%,$heit:100%,$o_fit:cover,$o_pos:center); }
+        }
+        .txt{
+            text-align: center;
+            padding: 30px 0px;
+            h6{ @include text($f_style:normal,$f_weight:$weight_500,$f_size:$tag_size,$l_heit:24px,$colrs:$b1_color); }
+            span{ @include text($colrs:$gray_color,$f_size:$tag_size,$l_heit:$line_h,$f_weight:$weight_500,$f_style:normal); }
+        }
+    }
+}

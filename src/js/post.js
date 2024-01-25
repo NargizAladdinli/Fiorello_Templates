@@ -1,5 +1,53 @@
 const filter = document.querySelectorAll(".listes li a");
 
+const human = [
+  {
+    id: 1,
+    name: "CRYSTAL BROOKS",
+    position: "Florist",
+    imgUrl:
+      "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-1.png",
+  },
+  {
+    id: 2,
+    name: "SHIRLEY HARRIS",
+    position: "Manager",
+    imgUrl:
+      "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-team-img-2.png",
+  },
+  {
+    id: 3,
+    name: "BEVERLY CLARK",
+    position: "Florist",
+    imgUrl:
+      "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-3.png",
+  },
+  {
+    id: 4,
+    name: "AMANDA WATKINS",
+    position: "Florist",
+    imgUrl:
+      "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-4.png",
+  },
+];
+
+human.map((user) => {
+  const cards = `
+
+    <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src=${user.imgUrl} alt>
+                            </div>
+                            <div class="txt">
+                                <h6>${user.name}</h6>
+                                <span>${user.position}</span>
+                            </div>
+                        </div>
+    
+    `;
+  document.querySelector(".cardz").insertAdjacentHTML("beforeend", cards);
+});
+
 const data = [
   {
     id: 1,
@@ -139,7 +187,6 @@ data.map((user) => {
 });
 
 slice = document.querySelectorAll(".slice");
-console.log(slice);
 
 filter.forEach((i) => {
   i.onclick = () => {
@@ -148,13 +195,13 @@ filter.forEach((i) => {
     });
     i.className = "fix";
 
-    const value = i.textContent
+    const value = i.textContent;
 
     slice.forEach((item) => {
-      item.style.display = 'none';
-      if(item.getAttribute('data-name') === value || value === "All"){
-        item.style.display = 'block'
+      item.style.display = "none";
+      if (item.getAttribute("data-name") === value || value === "All") {
+        item.style.display = "block";
       }
-    })
+    });
   };
 });
