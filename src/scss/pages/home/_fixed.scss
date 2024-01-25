@@ -1,0 +1,32 @@
+.fixed{
+    @include flex($j_content:center,$a_items:center);
+    @include img($wid:$width_100,$heit:600px);
+    @include ground($ground_pos:center,$ground_size:cover,$ground_attachment:fixed,$ground_repet:no-repeat);
+    .container{
+        @include flex($j_content:center,$a_items:center,$f_direction:column);
+        h3{
+            @include text($f_size:30px,$l_heit:42px,$f_weight:$weight_400,$f_style:normal,$colrs:$white_color);
+            font-family: 'Playfair Display', serif;
+        }
+        form{
+            display: flex;
+            @media (max-width:768px) { width: 100%; }
+            .white{
+                padding: 22px 19px 23px;
+                @include img($wid:467px,$heit:60px);
+                @include text($ground:$white_color,$border:1px solid $color_e8,$f_style:normal,$f_weight:$weight_400,$l_heit:15px,$f_size:12px,$colrs:$color95);
+            }
+            .red{
+                padding: 0.5px 43.1656px 0px 43.3656px;
+                @include img($wid:169px,$heit:60px);
+                @include text($border:1px,$ground:$red_color,$f_style:normal,$f_weight:$weight_500,$f_size:12px,$l_heit:60px,$colrs:$white_color);
+            }
+        }
+        #text{
+            display: block;
+            font-weight: 500;
+            padding: 5px;
+            font-style: italic;  
+        }
+    }
+}

@@ -1,5 +1,3 @@
-const filter = document.querySelectorAll(".listes li a");
-
 const human = [
   {
     id: 1,
@@ -35,14 +33,16 @@ human.map((user) => {
   const cards = `
 
     <div class="col-lg-3 col-sm-6">
-                            <div class="img">
+    <a href='#'>
+    <div class="img">
                                 <img src=${user.imgUrl} alt>
                             </div>
                             <div class="txt">
                                 <h6>${user.name}</h6>
                                 <span>${user.position}</span>
                             </div>
-                        </div>
+    </a>              
+    </div>
     
     `;
   document.querySelector(".cardz").insertAdjacentHTML("beforeend", cards);
@@ -174,7 +174,7 @@ data.map((user) => {
         <div class="text">
         <h6>${user.title}</h6>
         <div class="add">
-        <a href="#" class="tocart">Add to cart</a>
+        <a href="javascript:;" class="tocart">Add to cart</a>
         <span>$${user.price}</span>
         </div>
         </div>
@@ -184,24 +184,4 @@ data.map((user) => {
         `;
 
   document.querySelector(".cards").insertAdjacentHTML("beforeend", cards);
-});
-
-slice = document.querySelectorAll(".slice");
-
-filter.forEach((i) => {
-  i.onclick = () => {
-    filter.forEach((btn) => {
-      btn.className = " ";
-    });
-    i.className = "fix";
-
-    const value = i.textContent;
-
-    slice.forEach((item) => {
-      item.style.display = "none";
-      if (item.getAttribute("data-name") === value || value === "All") {
-        item.style.display = "block";
-      }
-    });
-  };
 });
