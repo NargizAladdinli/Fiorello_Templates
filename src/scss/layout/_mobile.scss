@@ -2,6 +2,11 @@
     @include breakpoint('wide'){
         display: none;
     }
+    .cart{
+        a{
+            @include text($colrs: #1B1B1B, $f_size: 12px, $f_weight: 500, $l_heit: 12px, $l_spacing: 1.2px, $t_transform: uppercase);
+        }
+    }
     .nav-link {
         .close{
             text-align: end;
@@ -48,7 +53,7 @@
         position: relative;
         &::after{
             content: '';
-            @include position($position:absolute,$left:0,$top:5px);
+            @include position($position:absolute,$left:0,$top:-8px);
             @include img($wid:100%,$heit:2px);
             background:#6d6a6a;
             transition: all 0.3s ease-in-out;
@@ -68,5 +73,6 @@
         }
        }
     }
-    display: block;
+    display: flex;
+    gap: 12px;
 }
