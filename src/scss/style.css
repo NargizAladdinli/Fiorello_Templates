@@ -126,7 +126,7 @@ input {
   font-size: 22px;
   line-height: 1.1rem;
 }
-.header .all .menu .cart a {
+.header .all .menu .cartBox a {
   color: #1B1B1B;
   font-size: 12px;
   font-weight: 500;
@@ -150,7 +150,7 @@ input {
     display: none;
   }
 }
-.mobile-menu .cart a {
+.mobile-menu .cartBox a {
   color: #1B1B1B;
   font-size: 12px;
   font-weight: 500;

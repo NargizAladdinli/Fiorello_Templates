@@ -36,8 +36,3 @@ const bata = [
     `;
     document.querySelector(".blum").insertAdjacentHTML("beforeend", blum);
   });
-
-  const fruits = ['apple', 'banana', 'orange']
-
-  fruits[3] = 'grage'
-  console.log(fruits[4]);
