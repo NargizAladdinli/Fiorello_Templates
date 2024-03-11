@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  &::selection{
+    background: #f34f3f;
+    color: #fff;
+  }
 }
 
 body {

@@ -1,5 +1,3 @@
-// import {data }from "./post";
-// console.log();
 
 const data = [
   {
@@ -158,7 +156,7 @@ let addcart = document.querySelectorAll(".tocart");
 for (let i = 0; i < addcart.length; i++) {
   addcart[i].addEventListener("click", () => {
     cartNumbers(data[i]);
-    totalCost(data[i])
+    totalCost(data[i]);
   });
 }
 
@@ -168,7 +166,7 @@ function onLoadCartNumbers() {
   if (productNumbers) {
     document.querySelector(
       ".cartBox .cartLink .cartnum"
-    ).textContent = `( ${productNumbers} )`;
+    ).textContent = `( $${productNumbers} )`;
   }
 }
 
@@ -178,17 +176,17 @@ function cartNumbers(product) {
   productNumbers = parseInt(productNumbers);
 
   if (productNumbers) {
-    localStorage.setItem("cartNumbers", productNumbers + 1);
-    document.querySelector(".cartBox .cartLink .cartnum").textContent = `( ${
-      productNumbers + 1
+    localStorage.setItem("cartNumbers", productNumbers + product.price);
+    document.querySelector(".cartBox .cartLink .cartnum").textContent = `( $${
+      productNumbers + product.price
     } )`;
   } else {
-    localStorage.setItem("cartNumbers", 1);
+    localStorage.setItem("cartNumbers", product.price);
     document.querySelector(
       ".cartBox .cartLink .cartnum"
-    ).textContent = `( ${1} )`;
+    ).textContent = `( $${product.price} )`;
   }
-
+  totalCost(product.price)
   setItems(product);
 }
 
@@ -214,8 +212,42 @@ function setItems(product) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
-function totalCost() {
+function totalCost(product) {
+   let cartCost = localStorage.getItem('totalCost')
+  // cartCost = parseInt(cartCost)
+  console.log('my cartCost is', cartCost);
+  console.log(typeof cartCost);
 
+  if(cartCost != null) {
+    cartCost = parseInt(cartCost)
+    localStorage.setItem('totalCost', cartCost + product.price);
+  } else {
+    localStorage.setItem('totalCost', product.price);
+  }
 }
 
 onLoadCartNumbers();
+
+
+const filter = document.querySelectorAll(".listes li a");
+const slice = document.querySelectorAll(".slice");
+
+
+
+filter.forEach((i) => {
+    i.onclick = () => {
+      filter.forEach((btn) => {
+        btn.className = " ";
+      });
+      i.className = "fix";
+  
+      const value = i.textContent;
+  
+      slice.forEach((item) => {
+        item.style.display = "none";
+        if (item.getAttribute("data-name") === value || value === "All") {
+          item.style.display = "block";
+        }
+      });
+    };
+  });

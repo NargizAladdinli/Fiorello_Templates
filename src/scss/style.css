@@ -6,6 +6,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-moz-selection {
+  background: #f34f3f;
+  color: #fff;
+}
+*::selection {
+  background: #f34f3f;
+  color: #fff;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
